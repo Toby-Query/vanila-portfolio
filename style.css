@@ -117,6 +117,11 @@ h4{
     border-radius: 20px;
 }
 
+#myimg2{
+    height: 70vh;
+    border-radius: 20px;
+}
+
 #no{
     padding: 70px 0;
 }
@@ -127,7 +132,7 @@ h4{
 
 .icons{
     font-size: 7rem;
-    margin-left: 50PX;
+    /* margin-left: 50PX; */
 }
 
 .lasticon{
@@ -151,7 +156,6 @@ h4{
 }
 
 .card, .card2{
-    max-width: 290px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -211,4 +215,49 @@ h4{
 
 iframe{
     border-radius: 7px;
+}
+
+i{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1360px) {
+    #myimg2{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #myimg{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .attributes{
+        margin: 0px 20px 70px 20px;
+    }
+
+    .card, .card2{
+        max-width: none;
+    }
+
+    #inabout{
+        margin: 40px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .attributes{
+        margin: 0px 0px 70px 0px;
+        border-radius: 0;
+        padding: 10px 10px;
+    }
+
+    #inabout{
+        margin: 40px 15px;
+    }
 }
