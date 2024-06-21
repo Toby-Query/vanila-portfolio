@@ -40,11 +40,16 @@ ul{
 li{
     margin-left: 40px;
     font-size: 1.1rem;
+    vertical-align: middle;
 }
 
 a{
     text-decoration: none;
     color: black;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    height: 100%;
 }
 
 p{
@@ -224,6 +229,39 @@ i{
     justify-content: center;
 }
 
+#menuToggle input{
+    display: none;
+}
+
+div h2{
+    padding: 5px;
+    width: 100%;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    height: fit-content;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+#sidebar li{
+    margin: 12px 10px;
+}
+
+#sidebar li a{
+    color: white;
+}
+
 @media (max-width: 1360px) {
     #myimg2{
         display: none;
@@ -261,3 +299,33 @@ i{
         margin: 40px 15px;
     }
 }
+
+.showOnMobile{
+    display: none;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 1150px) {
+    .hideOnMobile{
+        display: none;
+    }
+
+    .showOnMobile{
+        display: flex;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    h1{
+        margin-left: 3%;
+    }
+
+    nav{
+        margin-right: 2%;
+    }
+
+   
+  }
+

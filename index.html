@@ -7,28 +7,40 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
   </head>
   <body>
     <header>
       <h1 id="title"><a href="#">Muthuphei Mukhunyeledzi</a></h1>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#recog">Recognition</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="muthupheiResume.pdf" download="MuthupheiMukhunyeledziResume.pdf" target="_blank">Resume</a></li>
-        </ul>
+          <ul id="sidebar">
+            <li onclick=hideSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recog">Recognition</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="muthupheiResume.pdf" download="MuthupheiMukhunyeledziResume.pdf"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff" style="vertical-align: middle; margin-top: 0px;"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>  Resume</a></li>
+          </ul>
+          <ul id="menu">
+            <li class="hideOnMobile" ><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#languages">Languages</a></li>
+            <li class="hideOnMobile"><a href="#technologies">Technologies</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#recog">Recognition</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li> 
+            <li class="hideOnMobile"><a href="muthupheiResume.pdf" download="MuthupheiMukhunyeledziResume.pdf"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000" style="vertical-align: middle; margin-top: 0px;"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Resume</a></li>
+          <li onclick=showSideBar() class="showOnMobile"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
       </nav>
     </header>
 
     <section id="section1">
       <div id="no">
-        <h2>Hi, I'm Muthuphei Mukhunyeledzi. Nice to meet you.</h2>
+        <h2>Hi, I am Muthuphei Mukhunyeledzi. Nice to meet you.</h2>
       </div>
     </section>
 
@@ -327,5 +339,17 @@
       <p>"Made with the ingenuity of Hephaestus, blessings of a Muthuphei, by the hand of The Last One"</p>
       <p>&copy 2024 Muthuphei Mukhunyeledzi</p>
     </section>
+
+    <script>
+      function showSideBar(){
+        const sidebar = document.querySelector("#sidebar");
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSideBar(){
+        const sidebar = document.querySelector("#sidebar");
+        sidebar.style.display = 'none';
+      }
+    </script>
   </body>
 </html>
